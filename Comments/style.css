@@ -1,0 +1,316 @@
+@import url(https://fonts.googleapis.com/css?family=Electrolize);
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+body::-webkit-scrollbar {
+  width: 12px;  
+}
+body::-webkit-scrollbar-track {
+  background: darkred;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.336) ; 
+  border-radius: 20px; 
+  border: 3px solid darkred; 
+}
+
+*{
+    margin: 0px;
+}
+
+body{
+    background: rgba(72,0,0,0.9);
+    background-image: url(../Pics/bg.png);
+    min-height: 100%;
+    width: 100%px;
+    background-size: 30% auto;
+    animation: bganim 50s infinite ease;
+}
+
+.nav{
+    width: 100%px;
+    height: auto;
+    padding: 15px;
+    background-color: darkred;
+    border-top: 4px solid yellow;
+    border-bottom: 4px solid yellow;
+}
+
+.nav h1{
+    color: red;
+    font-family: 'Electrolize';
+    -webkit-text-stroke: 1px yellow;
+    font-size: 50px;
+    float: left;
+    animation-name: shadow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.nav ul{
+    text-align: right;
+    font-weight: 700;
+    text-shadow: 0 0 20px black;
+}
+
+.nav ul li{
+    display: inline;
+    line-height: 60px;
+    padding: 10px;
+    color: white;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-family: 'Electrolize';
+    color: white;
+    transition: 0.5s;
+    
+}
+
+.nav ul li a:hover{
+    color: red;
+    transition: 0.5s;
+}
+
+.link--underline-effect {
+    position: relative;
+    display: inline-block;
+}
+
+.link--underline-effect:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background: rgba(213,153,0,1.0);;
+    height: 3px;
+    left: auto;
+    right: 0;
+    width: 0px;
+    -webkit-transition: all .5s cubic-bezier(.23,1,.32,1);
+    transition: all .5s cubic-bezier(.23,1,.32,1);
+}
+  
+.link--underline-effect:hover:before {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+.sidenav{
+    display: none;
+}
+
+.io{
+    display: none;
+}
+
+#comments{
+    max-width: 500px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#comments input,#comments textarea{
+    display:block;
+    width:100%;
+    padding:10px;
+    border:none;
+    margin-bottom:10px;
+    background-color: darkred;
+    color:white;
+    font-family: 'Electrolize';
+    transition:.5s ease all;
+    box-shadow: 0 0 20px black;
+    border-radius: 10px;
+    border: 4px solid yellow;
+    font-weight: 700;
+}
+#comments input::-webkit-input-placeholder,#comments textarea::-webkit-input-placeholder{
+    color:white;
+    font-family: 'Electrolize';
+}
+#comments input:-moz-placeholder,#comments textarea:-moz-placeholder{
+    color: white;
+    opacity:1;
+    font-family: 'Electrolize';
+}
+#comments input::-moz-placeholder,#comments textarea::-moz-placeholder{
+    color: white;
+    opacity:1;
+    font-family: 'Electrolize';
+}
+#comments input:-ms-input-placeholder,#comments textarea:-ms-input-placeholder{
+    color: white;
+    font-family: 'Electrolize';
+}
+#comments input:focus,#comments textarea:focus{
+    outline:none;
+    background: rgba(213,153,0,1.0);
+    border: 4px solid darkred;
+    color: darkred;
+}
+#comments textarea{
+    height:150px;
+    resize:none;
+    color: white;
+    font-family: 'Electrolize';
+    border-radius: 10px;
+}
+#comments button{
+    display:block;
+    width:100%;
+    height: 40px;
+    background:rgba(213,153,0,1.0);
+    border: 4px solid darkred;
+    font-family: 'Electrolize';
+    padding:5px 10px;
+    font-weight:700;
+    color: darkred;
+    transition:.5s ease all;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#comments button:hover{
+    box-shadow:0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);
+    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1));
+}
+
+.h3{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Electrolize';
+    color: white;
+    text-shadow: 0 0 20px black;
+}
+
+.idea{
+    max-width: 800px;
+    height: auto;
+    background: rgba(255,255,255,0.3);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid black;
+    box-shadow: 0 0 20px black;
+}
+
+.idea h1{
+    color: white;
+    text-shadow: 0 0 20px black;
+    font-family: 'Coming Soon', cursive;
+    font-weight: 900;
+}
+
+.idea p{
+    color: white;
+    text-shadow: 0 0 20px black;
+    font-family: 'Coming Soon', cursive;
+    font-weight: 700;
+}
+
+.idea hr{
+    width: 250px;
+    height: 10px;
+    border: none;
+    background-color: darkred;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 20px black;
+}
+
+.body{
+    padding: 15px;
+}
+
+span{
+    color: gray;
+    font-size: 20px;
+}
+
+h4{
+    color: darkred;
+    font-family: 'Coming Soon', cursive;
+    float: right;
+    text-shadow: 0 0 20px black;
+}
+
+@keyframes bganim{
+   0%{ background-position-x: 0%}
+   50%{ background-position-x: 100%}
+   100%{background-position-x: 0%}
+}
+
+@keyframes shadow{
+    0%{text-shadow: 0 0 0px yellow}
+    50%{text-shadow: 0 0 20px yellow}
+    75%{text-shadow: 0 0 20px yellow}
+    100%{text-shadow: 0 0 0px yellow}
+}
+
+@media only screen and (max-width: 600px){
+    .io button{
+        padding: 10px;
+        background-color: transparent;
+        border: 2px solid red;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+    
+    .io i{
+        color:rgba(213,153,0,1.0);  
+    }
+    
+    .io{
+        display: block;
+        float: right;
+        margin-right: 10px;
+        margin-top: -70px;
+    }
+    
+    .sidenav {
+       height: 100%;
+       width: 0; 
+       position: fixed; 
+       z-index: 1;
+       top: 0; 
+       left: 0;
+       background:rgba(0,0,0,0.9); 
+       overflow-x: hidden; 
+       padding-top: 60px; 
+       transition: 0.5s; 
+       display: block;
+    }
+
+   .sidenav a {
+       text-decoration: none;
+       font-family: 'Electrolize';
+       color: white;
+       font-weight: 700;
+       transition: 0.5s;
+       display: block;
+       font-size: 25px;
+       padding: 28px 8px 8px 32px;
+    }
+
+   .sidenav a:hover {
+       color:red;
+       transition: 0.5s;
+    }
+    
+   .sidenav .closebtn {
+       position: absolute;
+       top: 0;
+       right: 25px;
+       font-size: 36px;
+       margin-left: 50px;
+    }
+    
+    .nav ul{
+        display: none;
+    }
+    
+    .nav{
+        height: 60px;
+    }
+}
